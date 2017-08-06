@@ -4,11 +4,15 @@ Raspberry piなどを使うときに便利です。
 
 ## 使い方
 
-    wimg <image file> <drive>
+```
+wimg <image file> <drive>
+```
 
 たとえばdisk.imgをドライブX:に接続されているmicroSDカードに書き込む場合には
 
-    wimg disk.img x
+```
+wimg disk.img x
+```
 
 とします。
 
@@ -17,6 +21,8 @@ Raspberry piなどを使うときに便利です。
 SDカードに複数のパーティションがあると書き込めません。
 もう一度実行すると書き込める場合がありますが、
 
-    diskpart disk clean
+```
+diskpart disk clean
+```
 
 などのようにしてパーティションを消してください。
